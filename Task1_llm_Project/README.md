@@ -16,7 +16,13 @@ Features
 - Adjustable temperature
 - System prompts
 - Conversation memory
-
+  
+The files uploaded includes:
+- chat.py => basic chatbot with single response
+- chat2.py => multiturn conversation feature included
+- chat3.py => trial with system message
+- chat4.py => all features including temperature and max_tokens
+  
 Challenges Faced
 
  1. Model 
