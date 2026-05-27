@@ -60,42 +60,44 @@ python chat.py
 
 
 **Task 2:RAG AI system**
+
 The goal of this project was to build a Retrieval-Augmented Generation (RAG) system using Python, LangChain, ChromaDB, HuggingFace embeddings, and the Groq API.
 
 The RAG system should:
--Load PDF documents
--Split documents into chunks
--Generate embeddings for semantic search
--Retrieve relevant document chunks
--Generate context-aware AI responses
+- Load PDF documents
+- Split documents into chunks
+- Generate embeddings for semantic search
+- Retrieve relevant document chunks
+- Generate context-aware AI responses
 
 How Retrieval Works:
+
    The RAG system works by combining document search with AI. First, the PDF is loaded and split into smaller chunks of text. These chunks are converted into embeddings using a Hugging Face model. The embeddings are stored in ChromaDB. When the user asks a question, the question is also converted into an embedding. The system compares it with the stored embeddings and retrieves the most relevant chunks from the PDF. These chunks are then given as context to the Groq model, which generates the final answer based only on the retrieved information. This helps the chatbot answer questions related to the uploaded document instead of using only general AI knowledge.
 
 I used:
--Python
--LangChain
--ChromaDB
--HuggingFace Embeddings
--Groq API
--Llama 3.1 model
+- Python
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings
+- Groq API
+- Llama 3.1 model
 
 Features
--PDF document loading
--Text chunking
--Embedding generation
--ChromaDB vector storage
--Semantic similarity search
--Multi-document retrieval
--Context-aware question answering
--Conversation logging
+- PDF document loading
+- Text chunking
+- Embedding generation
+- ChromaDB vector storage
+- Semantic similarity search
+- Multi-document retrieval
+- Context-aware question answering
+- Conversation logging
 
 The files uploaded includes:
--rag.py => complete RAG pipeline implementation
--notes.pdf => input document for retrieval
--manual.pdf => additional document source
--research.pdf => additional document source
--requirements.txt => required libraries and dependencies
+- rag.py => complete RAG pipeline implementation
+- notes.pdf => input document for retrieval
+- manual.pdf => additional document source
+- research.pdf => additional document source
+- requirements.txt => required libraries and dependencies
 
 Challenges Faced
 
